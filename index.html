@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pair Matching Game</title>
+  <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+<body>
+  <!-- Start Screen -->
+  <div class="screen" id="start-screen">
+    <div class="bg">
+      <h1>Pair Matching Game</h1>
+      <div class="child">
+        <div class="input">
+          <h4>Your name: </h4>
+          <input type="text" id="player-name">
+        </div>
+        <div class="flex">
+          <p id="easy">Easy</p>
+          <p id="medium">Medium</p>
+          <p id="hard">Hard</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Screens -->
+  <div class="game-screen" id="easy-game">
+    <h1>Easy Game</h1>
+    <div class="game-stats">
+      <p>Time: <span id="easy-timer">0</span>s</p>
+      <p>Moves: <span id="easy-moves">0</span></p>
+    </div>
+    <div class="card-container" id="easy-container"></div>
+  </div>
+
+  <div class="game-screen" id="medium-game">
+    <h1>Medium Game</h1>
+    <div class="game-stats">
+      <p>Time: <span id="medium-timer">0</span>s</p>
+      <p>Moves: <span id="medium-moves">0</span></p>
+    </div>
+    <div class="card-container" id="medium-container"></div>
+  </div>
+
+  <div class="game-screen" id="hard-game">
+    <h1>Hard Game</h1>
+    <div class="game-stats">
+      <p>Time: <span id="hard-timer">0</span>s</p>
+      <p>Moves: <span id="hard-moves">0</span></p>
+    </div>
+    <div class="card-container" id="hard-container"></div>
+  </div>
+
+  <!-- Results Screen -->
+  <div class="screen" id="results-screen">
+    <div class="bg">
+      <h1>Game Completed!</h1>
+      <div class="results">
+        <h2>Congratulations <span id="result-name">Player</span>!</h2>
+        <p>Time: <span id="result-time">0</span> seconds</p>
+        <p>Moves: <span id="result-moves">0</span></p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./public/js/app.js"></script>
+</body>
+
+</html>
